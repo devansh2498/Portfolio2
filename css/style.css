@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+body{
+  margin:0;
+  font-family:Poppins;
+}
+
+/*Navbar*/
+.topnav {
+    background-color: #85dcb8;
+    overflow: hidden;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  .topnav a:hover {
+    background-color: #41b3a3;
+  }
+  .topnav a.active {
+    background-color:  #41b3a3;
+    color: white;
+  }
+  .topnav .icon {
+    display: none;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/*WELCOME*/
+
+
+
+#welcome-section{
+  color:white;
+  background:#E8A87C;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100vh;
+  text-align:center;
+}
+#welcome-section h1{
+  font-size:60px;
+}
+#welcome-section p{
+  font-size:25px;
+  font-style:italic;
+  color:rgb(0, 0, 0);
+  border-bottom:3px solid ;
+  
+}
+
+
+/*resume*/
+#skills-section{
+    background:white;
+    color: #2b746a;
+    padding: 6em 2em;
+    text-align:center;
+}
+#skill-head{
+    font-size:40px;
+    max-width: 640px;
+    margin: 0 auto 2em auto;
+    border-bottom: 2px solid; 
+}
+#skill-tile{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+/*PROJECTS*/
+
+
+
+#project-section{
+  background:#C38D9E;
+  padding: 6em 2em;
+  text-align:center;
+}
+#proj-head{
+  color:white;
+  font-size:40px;
+  max-width: 640px;
+  margin: 0 auto 2em auto;
+  border-bottom: 2px solid; 
+}
+.project-tile{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.proj-link{
+   text-decoration:none;
+  background:#41b3a3;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
+}
+.code{
+  color:#41b3a3;
+  transition: color 0.5s ease-out;
+}
+.proj-link:hover .code {
+  color: #2b746a;
+}
+.proj-image {
+  height: 30vh;
+  width: 100%;
+  object-fit: fit;
+}
+.proj-title {
+  color:white;
+  font-size:20px;
+  padding: 0px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration:none;
+  color:white;
+}
+.btn-show-all {
+  font-size:20px;
+  background:#41b3a3;
+  transition: background 0.3s ease-out ,transform 0.3s ease;
+}
+.btn-show-all:hover {
+  background: #2b746a;
+   transform:translateX(5px);
+}
+.btn:hover i{
+  transform:scale(2);
+}
+/*contact*/
+
+#contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  width: 100%;
+  height: 80vh;
+  background:#85dcb8;
+}
+.cont{
+  text-decoration:none;
+  color:rgb(41, 40, 40);
+  font-size:20px;
+  padding:1rem;
+  transition:transform 0.5s ease;
+}
+.cont:hover{
+transform:translateY(20px);
+}
+#contact-links{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+#contact-head{
+  color:rgb(41, 40, 40);
+}
+#contact-head h1{
+  font-size:60px;
+}
+#contact-head p{
+  font-size:20px;
+  font-style:italic;
+}
+
