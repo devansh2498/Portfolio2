@@ -32,6 +32,8 @@ body{
 .topnav {
     background-color: #85dcb8;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
   .topnav a {
     float: left;
